@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+          <a href="/" class="logo">Anika</a>
+    
+          <div class="nav-links">
+            <a href="#home" class="nav-item nav-item-active">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#gallery" class="nav-item">Gallery</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#contact" class="nav-item">contact</a>
+          </div>
+    
+          <div class="toggler">
+            <span class="line"></span><span class="line"></span
+            ><span class="line"></span>
+          </div>
+        </nav>
+      </header>
+      <section class="hero container" id="home">
+        <div class="hero-info">
+         <h1 class="title">Anika <span class="highlighted">Tahashin</span></h1>
+         <p class="hero-description">Web developer based in Finland, Helsinki</p>
+       </div>
+    
+    </section>
+
+    <section class="about container" id="about">
+        <div class="about-img">
+          <img src="anika.avif" alt="pic" />
+        </div>
+  
+        <div class="about-info">
+          <h2 class="secondery-title">About Me</h2>
+  
+          <p class="description">
+            Hello there, i am a dedicated full stack web developer with a deep love for all things digital. I'm here to transform your wildest web dreams into beautiful, functional reality. From crafting captivating front-end experiences to engineering robust back-end systems. Let's embark on a journey to create web wonders together!
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery container" id="gallery">
+        <div class="gallery-part">
+            <h2 class="secondery-title">Gallery</h2>
+        </div>
+        <div class="moodboard">
+            <div class="item">
+                <img src="image1.jpg" alt="Item 1">
+            </div>
+            <div class="item">
+                <img src="image2.jpg" alt="Item 2">
+            </div>
+
+      </section>
+
+      <section class="gallery container" id="skills">
+        <div class="gallery-part">
+            <h2 class="secondery-title">Skills</h2>
+        </div>
+        </section>
+      
+      <section class="projects container" id="projects">
+        <div class="projects-header">
+          <h2 class="secondery-title">Projects</h2>
+  
+          <div class="projects-tab">
+          </div>
+        </div>
+  
+        <div class="grid projects-grid">
+          <div class="grid-item projects-item all ui-ux">
+            <img src="./images/project-6.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+
+      
+      <section class="container contact" id="contact">
+        <div class="contact-info">
+          <h2 class="secondery-title">Contact</h2>
+          <div class="info-container">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info-data">
+                <h3>Address</h3>
+                <p>Helsinki, 00240</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-data">
+                <h3>Email</h3>
+                <p>anikatahashin11@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button class="btn submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+  
+          <footer class="footer">
+        <p>&copy; Anika Tahashin All Right Reserved</p>
+      </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
