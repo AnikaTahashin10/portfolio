@@ -16,42 +16,39 @@
 </head>
 
 <body>
-    <header>
-      
-        <nav class="nav">
-          <a href="/" class="logo">Anika</a>
-    
-          <div class="nav-links">
-            <a href="#home" class="nav-item nav-item-active">Home</a>
-            <a href="#about" class="nav-item">About</a>
-            <a href="#gallery" class="nav-item">Gallery</a>
-            <a href="#skills" class="nav-item">Skills</a>
-            <a href="#projects" class="nav-item">Projects</a>
-            <a href="#contact" class="nav-item">contact</a>
-          </div>
-    
-          <div class="toggler">
-            <span class="line"></span><span class="line"></span
-            ><span class="line"></span>
-          </div>
-        </nav>
-      </header>
 
+<!-- header -->
+<header>
 
-<!-- the moodboard -->
-    <section class="gallery-container" id="gallery">
-      <div class="moodboard">
-              <img src="./images/moodboard.jpeg" alt="Item 1">
-          </div>
-        </div>
-    </section>
-<!-- title -->
+  <nav class="nav">
+    <a href="/" class="logo">Anika</a>
+
+    <div class="nav-links">
+      <a href="#home" class="nav-item nav-item-active">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </div>
+
+    <div class="toggler">
+      <span class="line"></span><span class="line"></span
+      ><span class="line"></span>
+    </div>
+  </nav>
+</header>
+
+ <!-- hero banner -->
+<div class="hero-banner">
+  <h1 class="heroTitle">Welcome to my Portfolio</h1>
+</div>
 
 <section class="hero container" id="home">
   <div class="hero-info">
    <h1 class="title">Anika <span class="highlighted">Tahashin</span></h1>
    <p class="hero-description">Web developer based in Finland, Helsinki</p>
  </div>
+
 </section>
 
 <!-- about section -->
@@ -70,50 +67,65 @@
         </div>
       </section>
 
-
+<!-- skill section -->
       <section class="gallery container" id="skills">
-            <h2 class="secondery-title">Skills</h2>
-
-            <div class="skill-box1">
-              <h2 class="skill-title">JavaScript</h2>
-            </div>
-          
-            <div class="skill-box2">
-              <h2 class="skill-title">React.js</h2>
-            </div>
-          
-            <div class="skill-box1">
-              <h2 class="skill-title">Node.js</h2>
-            </div>
-          
-        </section>
-
-      <section id="projects">
-        <div class="container">
-          <h2 class="orange-title">HTML / CSS Projects</h2>
-          <article>
-            <!-- <a href=""> the link to code or the porject deployed -->
-              <div class="project-tile" id='thrice'>
-                <img src="" />
-                <div class="card-info">
-                 
+        <h2 class="secondery-title">Skills</h2>
+        <div class="skills">
+          <div class="skills-bar">
+            <div class="bar">
+              <div class="info">
+                <span>HTML</span>
+              </div>
+              <div class="progress-line"><span class="html"></span></div>
+              <div class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line"><span class="css"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>BOOTSTRAP</span>
+                  </div>
+                  <div class="progress-line"><span class="bootstrap"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="progress-line">
+                      <span class="javascript"></span>
+                    </div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>C PROGRAMMING</span>
+                      </div>
+                      <div class="progress-line"><span class="c"></span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </a>
+            </div>
+          </div>
+        </div>
+          
+        </section>
+<!-- project section -->
+      <section id="projects" id="project">
+        <h2 class="projectH1">Projects</h2>
             <div class="cards">
+              
               <div class="card">
                 <img src="./images/project1.png" alt="Project Image">
-                <h2>Todo App</h2>
+                <h3>Todo App</h2>
                 <p class="description">The description</p>
               </div>
               <div class="card">
                 <img src="./images/project2.png" alt="Project Image">
-                <h2>Snake Game</h2>
+                <h3>Snake Game</h2>
                 <p class="description">The description</p>
               </div>
               <div class="card">
                 <img src="./images/project3.png" alt="Project Image">
-                <h2>Data Structures Queue</h2>
+                <h3>Data Structures Queue</h2>
                 <p class="description">The description</p>
               </div>
                 </div>
@@ -121,7 +133,7 @@
           </article>
         </section>
 
-
+<!-- contact -->
       <section class="container contact" id="contact">
         <div class="contact-info">
           <h2 class="secondery-title">Contact</h2>
