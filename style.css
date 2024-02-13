@@ -13,14 +13,6 @@
     color: #f9f9f9;
   }
   
-  .contact-form input::placeholder {
-    color: white; 
-  }
-
-  .contact-form textarea::placeholder {
-    color: white;
-  }
-  
   html {
     scroll-behavior: smooth;
   }
@@ -38,6 +30,7 @@
   img {
     width: 100%;
   }
+
 
 /*moodboard*/
 .moodboard {
@@ -72,7 +65,7 @@
   }
   
   .hidden {
-    display: none;
+    display: none; §
   }
   
   .btn {
@@ -192,7 +185,7 @@
     padding-top: 2rem;
   }
   
-  .description {
+  .about-description {
     opacity: 0.7;
     font-size: 0.8rem;
     margin-bottom: 1rem;
@@ -278,13 +271,20 @@
     padding: 2rem 0;
   }
 
+  .contact-form input::placeholder {
+    color: white; 
+  }
+
+  .contact-form textarea::placeholder {
+    color: white;
+  }
   /* Desktop Design */
 @media screen and (min-width: 700px) {
     .container {
       padding: 4rem 6rem;
     }
   
-    .description {
+    .about-description {
       font-size: 1rem;
     }
   
@@ -378,4 +378,81 @@
     .submit-btn {
       font-size: 1.5rem;
     }
+  }
+
+  /* skill boxes */
+  
+  .skill-container {
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+    column-gap: 20px;
+  } 
+
+  .skill-box1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+
+  }
+
+  .skill-box2 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+
+  }
+  
+  .skill-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+
+  /* card */
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the cards */
+    gap: 20px; 
+  }
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+    overflow: hidden; 
+  
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .description {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(20px);
+    margin-top: 10px;
+  }
+
+  /* Style the image */
+  .card img {
+    width: 100%; /* Make the image fill the entire width of the card */
+    height: auto; 
   }
